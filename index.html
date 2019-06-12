@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Calc</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/c4457e42a6.js"></script> -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div id="calculator">
+            <div id="display">
+                <div id="dp-last-num"></div>
+                <div id="dp-sign"></div>
+                <div id="dp-current-num">0</div>
+            </div>
+            <div id="keyboard">
+                <div class="row">
+                    <div class="button" id="clean-all">AC</div><!--
+                    --><div class="button gray myfas" id="backspace"><i class="fal fa-backspace"></i></div><!--
+                    --><div class="button gray myfas math-operator" data-math="percent">
+                        <i class="fal fa-percent"></i></div><!--
+                    --><div class="button gray myfas math-operator" data-math="divide">
+                        <i class="fal fa-divide"></i></div>
+                </div>
+                <div class="row">
+                    <div class="button" onclick="numberBtn(this);">7</div><!--
+                    --><div class="button" onclick="numberBtn(this);">8</div><!--
+                    --><div class="button" onclick="numberBtn(this);">9</div><!--
+                    --><div class="button gray myfas math-operator" data-math="mpl">
+                        <i class="fal fa-times"></i></div>
+                </div>
+                <div class="row">
+                    <div class="button" onclick="numberBtn(this);">4</div><!--
+                    --><div class="button" onclick="numberBtn(this);">5</div><!--
+                    --><div class="button" onclick="numberBtn(this);">6</div><!--
+                    --><div class="button gray myfas math-operator" data-math="minus">
+                        <i class="fal fa-minus"></i></div>
+                </div>
+                <div class="row">
+                    <div class="button" onclick="numberBtn(this);">1</div><!--
+                    --><div class="button" onclick="numberBtn(this);">2</div><!--
+                    --><div class="button" onclick="numberBtn(this);">3</div><!--
+                    --><div class="button gray myfas math-operator" data-math="plus">
+                        <i class="fal fa-plus"></i></div>
+                </div>
+                <div class="row">
+                    <div class="button" onclick="numberBtn(this);">0</div><!--
+                    --><div class="button" onclick="numberBtn(this);">.</div><!--
+                    --><div class="button orange myfas" id="equalityBtn"><i class="fal fa-equals"></i></div>
+                </div>
+            </div>
+            <!-- TODO: адекватное выравнивание у FAS -->
+            <script src="calculator.js"></script>
+        </div>
+    </div>
+</body>
+</html>
